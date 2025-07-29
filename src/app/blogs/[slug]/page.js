@@ -5,14 +5,14 @@ import Image from "next/image";
 import Link from "next/link";
 import {
   FaTwitter,
-  FaPinterestP,
   FaFacebookF,
   FaInstagram,
-  FaWordpressSimple,
   FaEye,
   FaCommentDots,
   FaCalendarAlt,
   FaLongArrowAltRight,
+  FaWhatsapp,
+  FaLinkedin,
 } from "react-icons/fa";
 
 // Generate static paths
@@ -50,7 +50,9 @@ export default function BlogDetailPage({ params }) {
             />
 
             <div className="details__content space-y-6">
-              <h2 className="text-3xl font-bold leading-snug">{post.title}</h2>
+              <h2 className="text-lg lg:text-3xl font-bold leading-snug">
+                {post.title}
+              </h2>
 
               <ul className="flex flex-wrap gap-4 text-sm text-gray-600">
                 <li className="flex items-center gap-1">
@@ -87,7 +89,7 @@ export default function BlogDetailPage({ params }) {
                   .map((post, i) => (
                     <div
                       key={post.slug}
-                      className="related-post-wrap bg-white shadow rounded-lg overflow-hidden"
+                      className="related-post-wrap bg-white shadow hover:shadow-2xl border border-[#eee] hover:border-[#2d7372] rounded-lg overflow-hidden"
                     >
                       <Image
                         src={post.image}
@@ -155,7 +157,7 @@ export default function BlogDetailPage({ params }) {
                 />
                 <button
                   type="submit"
-                  className="bg-green-600 text-white px-6 py-2 rounded hover:bg-green-700"
+                  className="bg-[#2d7372] text-white px-6 py-2 rounded hover:bg-green-700"
                 >
                   Post Comment
                 </button>
@@ -175,7 +177,7 @@ export default function BlogDetailPage({ params }) {
                   />
                   <button
                     type="submit"
-                    className="bg-green-600 text-white px-4 hover:bg-green-700"
+                    className="bg-[#2d7372] text-white px-4 hover:bg-green-700"
                   >
                     Search
                   </button>
@@ -186,20 +188,20 @@ export default function BlogDetailPage({ params }) {
               <div className="bg-white rounded-lg shadow p-5">
                 <h2 className="text-xl font-semibold mb-4">Follow Us</h2>
                 <div className="flex space-x-4 text-xl text-gray-500">
-                  <a href="#" className="hover:text-green-600 transition">
+                  <a href="#" className="hover:text-[#2d7372] transition">
                     <FaTwitter />
                   </a>
-                  <a href="#" className="hover:text-green-600 transition">
-                    <FaPinterestP />
+                  <a href="#" className="hover:text-[#2d7372] transition">
+                    <FaWhatsapp />
                   </a>
-                  <a href="#" className="hover:text-green-600 transition">
+                  <a href="#" className="hover:text-[#2d7372] transition">
                     <FaFacebookF />
                   </a>
-                  <a href="#" className="hover:text-green-600 transition">
+                  <a href="#" className="hover:text-[#2d7372] transition">
                     <FaInstagram />
                   </a>
-                  <a href="#" className="hover:text-green-600 transition">
-                    <FaWordpressSimple />
+                  <a href="#" className="hover:text-[#0A66C2] transition">
+                    <FaLinkedin />
                   </a>
                 </div>
               </div>

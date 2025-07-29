@@ -82,7 +82,7 @@ export default function Footer() {
                 href="/"
                 className="text-2xl font-bold text-white tracking-wide"
               >
-               <Image src="/images/LOGO.png" width={400} height={400} alt="" />
+               <Image src="/images/LOGO.webp" width={400} height={400} alt="" />
               </Link>
 
               <p className="text-base lg:mt-4">

@@ -30,7 +30,7 @@ export default function BlogSection() {
                   {blogPosts.map((post) => (
                     <div
                       key={post.id}
-                      className="bg-white shadow-lg rounded-lg overflow-hidden"
+                      className="bg-white shadow-lg hover:shadow-2xl border border-[#eee] hover:border-[#2d7372] rounded-lg overflow-hidden"
                     >
                       <Image
                         src={post.image}
@@ -87,7 +87,7 @@ export default function BlogSection() {
                     />
                     <button
                       type="submit"
-                      className="bg-green-600 text-white px-4 hover:bg-green-700"
+                      className="bg-[#2d7372] text-white px-4 hover:bg-green-700"
                     >
                       Search
                     </button>
@@ -98,19 +98,19 @@ export default function BlogSection() {
                 <div className="bg-white rounded-lg shadow p-5">
                   <h2 className="text-xl font-semibold mb-4">Follow Us</h2>
                   <div className="flex space-x-4 text-xl text-gray-500">
-                    <a href="#" className="hover:text-green-600 transition">
+                    <a href="#" className="hover:text-[#2d7372] transition">
                       <FaTwitter />
                     </a>
-                    <a href="#" className="hover:text-green-600 transition">
+                    <a href="#" className="hover:text-[#2d7372] transition">
                       <FaPinterestP />
                     </a>
-                    <a href="#" className="hover:text-green-600 transition">
+                    <a href="#" className="hover:text-[#2d7372] transition">
                       <FaFacebookF />
                     </a>
-                    <a href="#" className="hover:text-green-600 transition">
+                    <a href="#" className="hover:text-[#2d7372] transition">
                       <FaInstagram />
                     </a>
-                    <a href="#" className="hover:text-green-600 transition">
+                    <a href="#" className="hover:text-[#2d7372] transition">
                       <FaWordpressSimple />
                     </a>
                   </div>

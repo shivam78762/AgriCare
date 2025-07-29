@@ -94,7 +94,7 @@ export default function Testimonials() {
         >
           {testimonials.map((testi, index) => (
             <SwiperSlide key={index} className="h-full">
-              <div className="bg-white rounded-3xl shadow-xl border border-green-600 p-6 relative overflow-hidden flex flex-col justify-between h-full min-h-[250px] lg:min-h-[360px] group hover:shadow-2xl transition-all duration-300">
+              <div className="bg-white rounded-3xl shadow-xl border border-[#2d7372] p-6 relative overflow-hidden flex flex-col justify-between h-full min-h-[250px] lg:min-h-[360px] group hover:shadow-2xl transition-all duration-300">
                 <div className="flex flex-col items-center mt-0 lg:mt-6 mb-4">
                   <div
                     className="w-16 h-16 rounded-full border-4 border-green-200 shadow-md mb-2"

@@ -6,13 +6,13 @@ export default function InnerBanner({ title }) {
   return (
     <section className="relative">
       <div
-        className="container mx-auto relative bg-cover bg-center bg-no-repeat py-16 lg:py-20 overflow-hidden before-layer after-layer"
+        className="container mx-auto relative bg-cover bg-center bg-no-repeat  py-10 lg:py-20 overflow-hidden before-layer after-layer"
         style={{ backgroundImage: `url("/images/banner.webp")` }}
       >
         <div className="absolute inset-0 bg-black/50 z-0" />
 
         <div className="relative z-10 container mx-auto px-4 text-center">
-          <h1 className="text-3xl md:text-5xl font-bold text-white relative inline-block">
+          <h1 className="text-2xl lg:text-3xl md:text-5xl font-bold text-white relative inline-block">
             {title}
             <span className="block w-16 h-1 mt-3 mx-auto bg-[#2d7372] rounded-full" />
           </h1>

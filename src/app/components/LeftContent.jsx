@@ -8,7 +8,8 @@ export default function LeftContent() {
   const pathname = usePathname();
 
   const services = [
-    { name: "Soil Food", href: "/soil-food" },
+    { name: "Desert Soil Reclamation", href: "/desert-soil-reclamation" },
+    { name: "Landscaping & AMC", href: "/landscaping-and-amc" },
     { name: "Soil Food 4G-Plus", href: "/soil-food-4g-plus" },
     { name: "Agriphos", href: "/agriphos" },
     { name: "Ari Potash", href: "/agri-potash" },

@@ -32,12 +32,15 @@ export default function Navbar() {
     <header className="w-full sticky top-0 shadow-md z-50 bg-white">
       <div className="container mx-auto px-5 lg:px-28  flex justify-between items-center">
         {/* Logo */}
-        <Link
-          href="/"
-          className="text-2xl font-bold text-[#2d7372] tracking-wide"
-        >
-          {/* Agricare <span className="text-green-600">Planet</span> */}
-          <Image src="/images/LOGO.png" width={400} height={400} alt="" />
+        <Link href="/" className="font-bold text-[#2d7372] tracking-wide">
+          {/* Agricare <span className="text-[#2d7372]">Planet</span> */}
+          <Image
+            src="/images/LOGO.webp"
+            width={400}
+            height={400}
+            alt=""
+            className="w-[70%] lg:w-full h-auto"
+          />
         </Link>
 
         {/* Desktop Navigation */}
@@ -59,7 +62,11 @@ export default function Navbar() {
             </button>
 
             {isDropdownOpen && (
-              <ul className="absolute top-full left-0 w-64 mt-4 bg-white shadow-lg border-t border-green-600 z-50">
+              <ul
+                onMouseEnter={() => setIsDropdownOpen(true)}
+                onMouseLeave={() => setIsDropdownOpen(false)}
+                className="absolute top-full left-0 w-64 mt-4 bg-white shadow-lg border-t border-[#2d7372] z-50"
+              >
                 {services.map((item, idx) => (
                   <li
                     key={idx}
@@ -74,8 +81,9 @@ export default function Navbar() {
 
                         {/* Submenu */}
                         <ul
+                          onMouseEnter={() => setIsDropdownOpen(true)}
                           onMouseLeave={() => setIsDropdownOpen(false)}
-                          className="absolute top-0 right-full ml-1 w-64 bg-white shadow-lg border-t border-green-600 z-50 hidden group-hover:block group-hover:translate-x-0 transform transition duration-200 ease-in-out"
+                          className="absolute top-0 right-full ml-1 w-64 bg-white shadow-lg border-t border-[#2d7372] z-50 hidden group-hover:block group-hover:translate-x-0 transform transition duration-200 ease-in-out"
                         >
                           {item.submenu.map((sub, subIdx) => (
                             <li

@@ -44,7 +44,7 @@ export default function WhyCHoose() {
           <div className="w-full lg:w-[48%]">
             <div className="section-about-content">
               <div className="section-head ">
-                <div className="text-4xl font-bold relative  mb-6">
+                <div className="text-2xl lg:ext-4xl font-bold relative  mb-6">
                   {/* <span className="absolute text-4xl opacity-10 -top-2 font-extrabold pointer-events-none select-none">
                     Why Choose Us?
                   </span> */}
@@ -75,35 +75,35 @@ export default function WhyCHoose() {
               <div className="flex flex-wrap items-start mt-8">
                 <ul className="w-full text-lg text-gray-700 space-y-4">
                   <li className="flex items-start gap-2">
-                    <FaCheck className="text-green-600 mt-1" />
+                    <FaCheck className="text-[#2d7372] mt-1" />
                     <span>
                       <b>Scientific Expertise:</b> Our team includes soil
                       scientists, agronomists, and irrigation engineers.
                     </span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <FaCheck className="text-green-600 mt-1" />
+                    <FaCheck className="text-[#2d7372] mt-1" />
                     <span>
                       <b>Pest-Free Guarantee:</b> We use organic solutions that
                       are safe for children and pets.
                     </span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <FaCheck className="text-green-600 mt-1" />
+                    <FaCheck className="text-[#2d7372] mt-1" />
                     <span>
                       <b>Water Smart Systems:</b> Designed for the UAE’s climate
                       with minimal water wastage.
                     </span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <FaCheck className="text-green-600 mt-1" />
+                    <FaCheck className="text-[#2d7372] mt-1" />
                     <span>
                       <b>Trusted Across UAE & India:</b> Over 500+ satisfied
                       clients, from homes to royal estates.
                     </span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <FaCheck className="text-green-600 mt-1" />
+                    <FaCheck className="text-[#2d7372] mt-1" />
                     <span>
                       <b>Clear Contracts:</b> Transparent terms — 50% advance,
                       50% after 5 months of service completion.

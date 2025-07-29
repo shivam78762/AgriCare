@@ -44,7 +44,7 @@ const blogPosts = [
   },
   {
     title: "Regenerative Agriculture: The Future of Sustainable Soil Care",
-       slug: "regenerative-agriculture",
+    slug: "regenerative-agriculture",
     date: "2025-07-16",
     image: "/images/blog2.avif",
     excerpt:
@@ -58,7 +58,7 @@ const blogPosts = [
   },
   {
     title: "Climate-Smart Farming Tools Agricare Uses Across UAE and India",
-     slug: "climate-smart-farming",
+    slug: "climate-smart-farming",
     date: "2025-07-17",
     image: "/images/blog3.avif",
     excerpt:
@@ -87,9 +87,9 @@ const blogPosts = [
 
   {
     title: "How We’re Empowering Farmers with Green Technology",
-   slug: "empowering-farmers-green-tech",
+    slug: "empowering-farmers-green-tech",
     date: "2025-07-18",
-    image: "/images/blog4.webp",
+    image: "/images/green.avif",
     excerpt:
       "Technology in the hands of farmers changes everything. From reclaimed land to thriving gardens, we equip local communities with the tools to succeed.",
     description:
@@ -103,7 +103,7 @@ const blogPosts = [
     title: "What Makes Agricare the UAE’s Largest Organic Fertilizer Supplier?",
     slug: "uae-largest-fertilizer-supplier",
     date: "2025-07-18",
-    image: "/images/blog4.webp",
+    image: "/images/organic-farming.webp",
     excerpt:
       "How partnerships, innovation, and community engagement are driving Agricare Planet’s mission of a greener tomorrow.",
     description:
