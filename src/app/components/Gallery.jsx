@@ -11,7 +11,7 @@ export default function Gallery() {
     {
       title: "Innovative Organic Fertilizers for Agriculture",
       image: "/images/farmers-planting-crops.webp",
-      height: "h-[330px]",
+      height: "h-[250px] lg:h-[330px]",
       colSpan: "col-span-1",
     },
     {
@@ -42,7 +42,7 @@ export default function Gallery() {
       title: "Integrated Agriculture and Waste Solutions",
       image: "/images/chooseBanner.webp",
       height: "h-[330px]",
-      colSpan: "col-span-1 md:col-span-2", // full width
+      colSpan: "col-span-1 lg:col-span-2", // full width
     },
   ];
 

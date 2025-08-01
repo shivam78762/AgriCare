@@ -9,30 +9,32 @@ const imageData = [
   {
     src: "hero1.webp",
     heading: "Quality Soil for Agriculture",
-    subheading: "Quality Soil for Agriculture and Landscaping",
+    subheading:
+      "Rich soil grows rich harvests. We restore barren land into fertile ground using organic, science-based inputs — creating long-term productivity for farms and landscapes.",
     description:
       "Organic Fertilizers & Sustainable Waste Management for a Greener UAE",
   },
   {
     src: "hero2.webp",
     heading: "Enrich Your Land Naturally",
-    subheading: "Premium Organic Soil for Maximum Yield",
+    subheading:
+      "Revive your soil with our organic fertilizers and microbial blends — no chemicals, just nature-backed solutions for lasting fertility and healthy growth.",
     description:
       "We offer sustainable solutions for eco-friendly agriculture in the UAE",
   },
   {
     src: "hero3.webp",
     heading: "Healthy Soil, Healthy Future",
-    subheading: "Eco-friendly Fertilizers for Every Garden",
+    subheading:
+      "Building soil health today ensures food security, sustainability, and greener generations tomorrow — naturally and organically with AgriCare Planet.",
     description: "Nourish your crops with our scientifically tested compost",
   },
 ];
 
 export default function Banner() {
   const [selectedIndex, setSelectedIndex] = useState(0);
-
+  const selected = imageData[selectedIndex];
   // Always show the first index for content
-  const staticContent = imageData[0];
 
   // Auto-slide on mobile only
   useEffect(() => {
@@ -41,7 +43,7 @@ export default function Banner() {
 
     const interval = setInterval(() => {
       setSelectedIndex((prev) => (prev + 1) % imageData.length);
-    }, 3000);
+    }, 10000);
 
     return () => clearInterval(interval);
   }, []);
@@ -63,23 +65,24 @@ export default function Banner() {
           <div className="w-full lg:w-1/2 text-white text-center lg:text-left">
             <AnimatePresence mode="wait">
               <motion.div
-                key="static-content"
+                key={selectedIndex}
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: -20 }}
-                transition={{ duration: 0.5 }}
+                transition={{ duration: 1.5 }}
               >
-                <h5 className="hidden lg:block text-lg lg:text-2xl font-semibold">
-                  {staticContent.subheading}
+                <h5 className="text-2xl lg:text-4xl font-bold mt-0 lg:mt-5 mb-5 leading-tight ">
+                  {selected.heading}
                 </h5>
-                <h1 className="text-2xl lg:text-5xl font-bold my-5 leading-tight">
-                  Transforming Deserts, Nurturing Growth
+                <h1 className="text-lg lg:text-xl font-semibold">
+                  {selected.subheading}
                 </h1>
-                <p className="mb-8">{staticContent.description}</p>
+
+                {/* <p className="mb-8">{selected.description}</p> */}
               </motion.div>
             </AnimatePresence>
 
-            <div className="flex justify-center lg:justify-start gap-4">
+            <div className="flex justify-center lg:justify-start gap-4 mt-8">
               <Link
                 href="/services"
                 className="px-6 py-3 bg-[#2d7372] text-white font-medium rounded-md text-center"
@@ -96,7 +99,7 @@ export default function Banner() {
           </div>
 
           {/* Right image grid — hidden on mobile */}
-          <div className="hidden md:grid w-full lg:w-1/2 grid-cols-2 lg:grid-cols-3 gap-4">
+          <div className="hidden md:grid w-full lg:w-1/2 grid-cols-3 lg:grid-cols-3 gap-4">
             {imageData.map((item, i) => (
               <div
                 key={i}

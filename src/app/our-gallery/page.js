@@ -5,7 +5,7 @@ import Gallery from "../components/Gallery";
 const page = () => {
   return (
     <>
-      <InnerBanner title="Our Gallary" />
+      <InnerBanner title="Our Gallery" />
       <Gallery />
     </>
   );

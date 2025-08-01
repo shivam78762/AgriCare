@@ -35,7 +35,7 @@ const page = () => {
 
             {/* Process Section */}
             <section className="bg-white py-10 px-0">
-              <div className=" mx-auto block lg:flex gap-12 items-center">
+              <div className=" mx-auto block md:flex gap-4 lg:gap-12 items-center">
                 <div>
                   <h3 className="text-lg lg:text-3xl font-semibold mb-6 text-[#2d7372]">
                     Our Approach to Restoration
@@ -53,7 +53,7 @@ const page = () => {
                   alt="Soil Treatment"
                   width={300}
                   height={400}
-                  className="rounded-2xl mt-3 lg:mt-0 shadow-xl mx-auto"
+                  className="rounded-2xl mt-3 lg:mt-0 mx-auto"
                 />
               </div>
             </section>

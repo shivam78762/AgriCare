@@ -7,6 +7,13 @@ import Link from "next/link";
 export default function LandscapeSections() {
   const sections = [
     {
+      title: "Desert Soil Reclamation",
+      description:
+        "Deserts make up more than one-third of the Earth’s surface. With climate change and population pressure accelerating land degradation, restoring desert soils has become a global priority. At Agricare Planet, our mission is to transform barren terrain into fertile ecosystems using sustainable, organic, and high-impact solutions.",
+      image: "/images/before.webp",
+      link: "/desert-soil-reclamation",
+    },
+    {
       title: "Soil Food",
       description:
         "Vermicompost (vermi-compost) is the product of the decomposition process using various species of worms, usually red wigglers, white worms, and other earthworms, to create a mixture of decomposing vegetable or food waste, bedding materials, and vermicast. This process is called vermicomposting, while the rearing of worms for this purpose is called vermiculture.",
@@ -86,7 +93,7 @@ export default function LandscapeSections() {
                   src={section.image}
                   alt={section.title}
                   fill
-                  className="object-cover rounded-lg shadow-lg"
+                  className="object-contain "
                 />
               </div>
             </div>

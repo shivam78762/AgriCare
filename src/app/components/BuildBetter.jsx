@@ -11,7 +11,7 @@ export default function ServiceSection() {
         <div className="max-w-4xl mx-auto block lg:flex gap-20">
           <div className="text-2xl lg:text-4xl font-bold relative">
             Learn More About Our {""}
-            <span className="text-[#2d7372] relative inline-block">
+            <span className=" relative inline-block">
               {""} Solutions
               <svg
                 className="absolute left-0 -bottom-1 w-full h-3"

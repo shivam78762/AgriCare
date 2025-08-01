@@ -154,7 +154,7 @@ export default function LandscapingPage() {
             <div className="absolute -top-3 left-1/2 transform -translate-x-1/2 text-green-100 text-5xl">
               ✻
             </div>
-            <h2 className="text-2xl lg:text-4xl font-bold text-green-800 relative inline-block">
+            <h2 className="text-2xl lg:text-4xl font-bold text-[#2d7372] relative inline-block">
               <span className="relative z-10">
                 Annual Maintenance Contracts{" "}
                 <span className="text-[#2d7372]">(AMC)</span>

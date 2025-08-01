@@ -3,13 +3,11 @@ import React, { useState, useEffect } from "react";
 import { FaLocationDot } from "react-icons/fa6";
 import { FaPhoneAlt, FaPhoneVolume } from "react-icons/fa";
 import { HiOutlineMailOpen } from "react-icons/hi";
-import { useRouter } from "next/navigation";
 import axios from "axios";
 import Swal from "sweetalert2";
+import Link from "next/link";
 
 export default function Contact() {
-  const router = useRouter();
-
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -120,9 +118,12 @@ export default function Contact() {
                   <h3 className="font-black text-lg md:text-lg text-gray-900">
                     Call Us :
                   </h3>
-                  <p className="text-lg text-gray-700">
+                  <Link
+                    href="tel:+971 585589552"
+                    className="text-lg text-gray-700"
+                  >
                     Mobile-no: +971 585589552
-                  </p>
+                  </Link>
                 </div>
               </div>
 
@@ -218,7 +219,7 @@ export default function Contact() {
                   <button
                     type="submit"
                     disabled={loading}
-                    className="bg-[#2d7372] hover:bg-green-500 text-white font-bold px-6 py-3 rounded-full transition duration-300 shadow-md hover:shadow-lg"
+                    className="bg-[#2d7372] hover:bg-[#2d7372d5] text-white font-bold px-6 py-3 rounded-full transition duration-300 shadow-md hover:shadow-lg"
                   >
                     {loading ? "Sending..." : "Submit Now"}
                   </button>

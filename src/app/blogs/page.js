@@ -39,8 +39,8 @@ export default function BlogSection() {
                         height={400}
                         className="w-full h-[250px]"
                       />
-                      <div className="p-6">
-                        <ul className="flex flex-wrap gap-4 text-base text-gray-500 mb-3">
+                      <div className="p-3 lg:p-6">
+                        <ul className="flex flex-wrap gap-2 lg:gap-4 text-base text-gray-500 mb-3">
                           <li className="flex items-center gap-1">
                             <FaEye /> {post.views} Views
                           </li>
@@ -51,7 +51,7 @@ export default function BlogSection() {
                             <FaCalendarAlt /> {post.date}
                           </li>
                         </ul>
-                        <h2 className="text-xl font-bold mb-3">
+                        <h2 className="text-lg lg:text-xl font-bold mb-3">
                           <Link
                             href={`/blogs/${post.slug}`}
                             className="hover:text-green-700 transition duration-300"

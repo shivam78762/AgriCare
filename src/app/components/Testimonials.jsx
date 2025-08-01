@@ -54,7 +54,7 @@ export default function Testimonials() {
   return (
     <div className="container bg-[#F8F8F8] relative mx-auto px-5 md:px-12 xl:px-32 py-8 md:py-12 xl:py-16">
       <div className="text-center flex flex-col items-center gap-y-2">
-        <div className="text-4xl font-bold relative mb-6">
+        <div className="text-2xl lg:ext-4xl font-bold relative  mb-6">
           {/* <span className="absolute text-4xl text-wrap lg:text-nowrap opacity-10 -top-2 font-extrabold pointer-events-none select-none">
             Our Happy Customers
           </span> */}

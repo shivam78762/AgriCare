@@ -9,7 +9,6 @@ const services = [
   { title: "Desert Soil Reclamation", href: "/desert-soil-reclamation" },
   {
     title: "Organic Fertilizers and Manures",
-
     submenu: [
       { title: "Soil Food", href: "/soil-food" },
       { title: "Soil Food 4G-Plus", href: "/soil-food-4g-plus" },
@@ -19,6 +18,7 @@ const services = [
     ],
   },
   { title: "Landscaping and AMC", href: "/landscaping-and-amc" },
+  { title: "Waste Management", href: "/waste-management" },
   { title: "Consultancy", href: "/consultancy" },
 ];
 
@@ -45,10 +45,10 @@ export default function Navbar() {
 
         {/* Desktop Navigation */}
         <nav className="hidden lg:flex space-x-6 items-center font-medium text-[#333] text-lg">
-          <Link href="/" className="hover:text-green-700 transition">
+          <Link href="/" className="hover:text-[#2d7372] transition">
             Home
           </Link>
-          <Link href="/about-us" className="hover:text-green-700 transition">
+          <Link href="/about-us" className="hover:text-[#2d7372] transition">
             About Us
           </Link>
 
@@ -57,7 +57,7 @@ export default function Navbar() {
             className="relative"
             onMouseEnter={() => setIsDropdownOpen(true)}
           >
-            <button className="flex items-center gap-1 hover:text-green-700 transition">
+            <button className="flex items-center gap-1 hover:text-[#2d7372] transition">
               Services <FaAngleDown size={14} />
             </button>
 
@@ -92,7 +92,7 @@ export default function Navbar() {
                             >
                               <Link
                                 href={sub.href}
-                                className="block px-4 py-2 text-base hover:text-green-700 transition"
+                                className="block px-4 py-2 text-base hover:text-[#2d7372] transition"
                               >
                                 {sub.title}
                               </Link>
@@ -117,13 +117,13 @@ export default function Navbar() {
             )}
           </div>
 
-          <Link href="/our-gallery" className="hover:text-green-700 transition">
+          <Link href="/our-gallery" className="hover:text-[#2d7372] transition">
             Gallery
           </Link>
-          <Link href="/blogs" className="hover:text-green-700 transition">
+          <Link href="/blogs" className="hover:text-[#2d7372] transition">
             Blog
           </Link>
-          <Link href="/contact-us" className="hover:text-green-700 transition">
+          <Link href="/contact-us" className="hover:text-[#2d7372] transition">
             Contact
           </Link>
         </nav>

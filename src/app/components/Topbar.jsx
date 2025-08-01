@@ -20,9 +20,9 @@ const Topbar = () => {
           <div className="flex space-x-4 items-center mb-2 md:mb-0">
             <ul className="flex items-end sm:flex-row space-y-2 sm:space-y-0 sm:space-x-4">
               <li className="flex items-center pr-3 mr-3 lg:mr-0">
-                <a className="flex items-center" href="tel:7624000499">
+                <a className="flex items-center" href="tel:+971 585589552">
                   <FaPhoneAlt className="mr-2 text-[#be854c]" />
-                  <span className="">+91 7624000499</span>
+                  <span className="">+971 585589552</span>
                 </a>
               </li>
               <li className="flex items-center">
@@ -37,15 +37,43 @@ const Topbar = () => {
           {/* Social Links */}
           <div className="hidden md:flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-4">
             <ul className="flex space-x-4 items-center">
+             <li>
+                <a
+                 href="https://www.instagram.com/agricareorganic/?igsh=ZmFhOHVrbGJ2NHo%3D&utm_source=qr#"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaInstagram className="hover:text-[#be854c]" />
+                </a>
+              </li>
               <li>
                 <a
-                  href="https://www.facebook.com/"
+                 href="https://www.facebook.com/share/1CLE8n7Z4P/?mibextid=wwXIfr"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   <FaFacebookF className="hover:text-[#be854c]" />
                 </a>
               </li>
+               <li>
+                <a
+                  href="https://www.youtube.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaYoutube className="" />
+                </a>
+              </li>
+                 <li>
+                <a
+                  href="https://www.linkedin.com/in/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaLinkedinIn className="hover:text-[#be854c]" />
+                </a>
+              </li>
+             
               <li>
                 <a
                   href="https://twitter.com/"
@@ -55,33 +83,8 @@ const Topbar = () => {
                   <FaTwitter className="hover:text-[#be854c]" />
                 </a>
               </li>
-              <li>
-                <a
-                  href="https://www.instagram.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <FaInstagram className="hover:text-[#be854c]" />
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://www.linkedin.com/in/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <FaLinkedinIn className="hover:text-[#be854c]" />
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://www.youtube.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <FaYoutube className="" />
-                </a>
-              </li>
+             
+           
             </ul>
           </div>
         </div>

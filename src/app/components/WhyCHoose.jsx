@@ -7,7 +7,7 @@ export default function WhyCHoose() {
   return (
     <section className="about-section py-16 px-5 lg:px-28">
       <div className="container mx-auto">
-        <div className="flex flex-wrap  gap-10 items-center">
+        <div className="flex flex-wrap  gap-4 lg:gap-10 items-center">
           {/* Left Image Column */}
           <div className="w-full lg:w-[48%] ">
             <div className="section-about-left about-image-wrap flex flex-wrap">
@@ -20,7 +20,7 @@ export default function WhyCHoose() {
                   className="w-60  h-60  object-cover "
                 />
               </div>
-              <div className="home-about-image right-image ">
+              <div className="home-about-image right-image ml-0 lg:ml-[-30px] w-full md:w-1/2  lg:w-[62%]">
                 <Image
                   src="/images/farmers-planting-crops-stockcake.webp"
                   alt="About Image Right"
@@ -29,7 +29,7 @@ export default function WhyCHoose() {
                   className="w-full h-auto object-cover"
                 />
               </div>
-              <div className="home-about-image bottom-image">
+              <div className="home-about-image bottom-image mt-0 lg:mt-[-100px] w-full md:w-1/2 lg:w-[80%]">
                 <Image
                   src="/images/farmers-planting-crops.webp"
                   alt="About Image Bottom"
@@ -68,7 +68,7 @@ export default function WhyCHoose() {
                 </div>
                 <p className="mt-4 text-lg text-justify text-gray-600">
                   At Agricare Planet, we believe in turning challenges into
-                  opportunities. 
+                  opportunities.
                 </p>
               </div>
 
